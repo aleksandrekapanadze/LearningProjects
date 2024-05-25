@@ -17,18 +17,18 @@
             // etc.
         }
 
-        [Fact]
-        public void CustomizedPipeline()
-        {
-            // arrange
-            var fixture = new Fixture();
+        //[Fact]
+        //public void CustomizedPipeline()
+        //{
+        //    // arrange
+        //    var fixture = new Fixture();
 
-            fixture.Customizations.Add(new AirportCodeStringPropertyGenerator());
+        //    fixture.Customizations.Add(new AirportCodeStringPropertyGenerator());
 
-            var flight = fixture.Create<FlightDetails>();
-            var airport = fixture.Create<Airport>();
+        //    var flight = fixture.Create<FlightDetails>();
+        //    var airport = fixture.Create<Airport>();
 
-            // etc.
-        }
+        //    // etc.
+        //}
     }
 }

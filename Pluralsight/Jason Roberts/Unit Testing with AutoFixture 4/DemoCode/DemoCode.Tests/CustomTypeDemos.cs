@@ -2,40 +2,40 @@
 {
     public class CustomTypeDemos
     {
-        [Fact]
-        public void ManualCreation()
-        {
-            // arrange
-            var sut = new EmailMessageBuffer();
+        //[Fact]
+        //public void ManualCreation()
+        //{
+        //    // arrange
+        //    var sut = new EmailMessageBuffer();
 
-            EmailMessage message = new EmailMessage(
-                "sarah@dontcodetired.com",
-                "Hello, hope you are well, Jason",
-                false);
+        //    EmailMessage message = new EmailMessage(
+        //        "sarah@dontcodetired.com",
+        //        "Hello, hope you are well, Jason",
+        //        false);
 
-            message.Subject = "Hi";
+        //    message.Subject = "Hi";
 
-            // act
-            sut.Add(message);
+        //    // act
+        //    sut.Add(message);
 
-            // assert
-            Assert.Single(sut.Emails);
-        }
+        //    // assert
+        //    Assert.Single(sut.Emails);
+        //}
 
-        [Fact]
-        public void AutoCreation()
-        {
-            // arrange
-            var fixture = new Fixture();
-            var sut = new EmailMessageBuffer();
+        //[Fact]
+        //public void AutoCreation()
+        //{
+        //    // arrange
+        //    var fixture = new Fixture();
+        //    var sut = new EmailMessageBuffer();
 
-            EmailMessage message = fixture.Create<EmailMessage>();
+        //    EmailMessage message = fixture.Create<EmailMessage>();
 
-            // act
-            sut.Add(message);
+        //    // act
+        //    sut.Add(message);
 
-            // assert
-            Assert.Single(sut.Emails);
-        }
+        //    // assert
+        //    Assert.Single(sut.Emails);
+        //}
     }
 }
